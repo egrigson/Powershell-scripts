@@ -1,4 +1,7 @@
-﻿Connect-VIServer zcgprvmc01 -WarningAction Continue
+#This script generates a list of the possible VMware PowerCLI commands, which can then be cut and pasted to the Wordpress syntax plugin
+#For instructions please see http://www.vexperienced.co.uk/2012/02/20/adding-a-custom-powercli-brush-for-syntax-highlighting-on-wordpress/
+
+﻿Connect-VIServer <your-vCenter-server> -WarningAction Continue
 
 # choose 'Cmdlet' or 'Alias' to query with
 $typetoUpdate = "Cmdlet"
